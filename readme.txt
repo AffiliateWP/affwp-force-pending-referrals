@@ -12,7 +12,9 @@ Force all referrals to a "pending" status.
 
 == Description ==
 
-This plugin requires [AffiliateWP](http://affiliatewp.com/ "AffiliateWP")<strong>It will NOT function without it.</strong>
+> This plugin requires [AffiliateWP](http://affiliatewp.com/ "AffiliateWP")<strong>It will NOT function without it.</strong>
+
+Once activated, all referrals created by AffiliateWP will be forced to a status of "pending".
 
 **What is AffiliateWP?**
 
