@@ -1,9 +1,8 @@
 === AffiliateWP - Force Pending Referrals ===
 Contributors: sumobi, mordauk
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EFUPMPEZPGW7L
 Tags: AffiliateWP, affiliate, Pippin Williamson, Andrew Munro, mordauk, pippinsplugins, sumobi, ecommerce, e-commerce, e commerce, selling, membership
 Requires at least: 3.3
-Tested up to: 3.9.2
+Tested up to: 4.7
 Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,13 +11,13 @@ Force all referrals to a "pending" status.
 
 == Description ==
 
-> This plugin requires [AffiliateWP](http://affiliatewp.com/ "AffiliateWP")<strong>It will NOT function without it.</strong>
+> This plugin requires [AffiliateWP](https://affiliatewp.com/ "AffiliateWP")<strong>It will NOT function without it.</strong>
 
 Once activated, all referrals created by AffiliateWP will be forced to a status of "pending".
 
 **What is AffiliateWP?**
 
-[AffiliateWP](http://affiliatewp.com/ "AffiliateWP") provides a complete affiliate management system for your WordPress website that seamlessly integrates with all major WordPress e-commerce and membership platforms. It aims to provide everything you need in a simple, clean, easy to use system that you will love to use.
+[AffiliateWP](https://affiliatewp.com/ "AffiliateWP") provides a complete affiliate management system for your WordPress website that seamlessly integrates with all major WordPress e-commerce and membership platforms. It aims to provide everything you need in a simple, clean, easy to use system that you will love to use.
 
 == Installation ==
 
