@@ -41,7 +41,7 @@ if ( ! class_exists( 'AffiliateWP_Force_Pending_Referrals' ) ) {
 		 * @since 1.1
 		 * @var   string
 		 */
-		private $version = '1.0';
+		private $version = '1.1';
 
 		/**
 		 * Main plugin file.
