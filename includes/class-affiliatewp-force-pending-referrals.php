@@ -201,9 +201,33 @@ if ( ! class_exists( 'AffiliateWP_Force_Pending_Referrals' ) ) {
 			// plugin meta.
 			add_filter( 'plugin_row_meta', array( $this, 'plugin_meta' ), null, 2 );
 
-			// disable auto complete referrals.
-			add_filter( 'affwp_auto_complete_referral', '__return_false' );
+			$affwp_version = get_option( 'affwp_version' );
 
+			if ( version_compare( $affwp_version, '2.7.1', '<' ) ) {
+				// disable auto complete referrals.
+				add_filter( 'affwp_auto_complete_referral', '__return_false' );
+			} else {
+				add_filter( 'affwp_auto_complete_referral', array( $this, 'maybe_disallow_complete_referral' ), 10, 2 );
+			}
+
+		}
+
+		/**
+		 * (Maybe) disallows a referral from being completed via complete_referral() in the Integrations API.
+		 *
+		 * @since 1.1.1
+		 *
+		 * @param bool            $allow    Whether to allow the referral to be completed.
+		 * @param \AffWP\Referral $referral Referral object.
+		 */
+		public function maybe_disallow_complete_referral( $allow, $referral ) {
+			if ( 'rejected' === $referral->status ) {
+				$allow = true;
+			} elseif ( 'pending' === $referral->status ) {
+				$allow = false;
+			}
+
+			return $allow;
 		}
 
 		/**
